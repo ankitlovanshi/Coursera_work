@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Inter';
+  }
+  
+  .container{
+    padding:2rem 1rem;
+    margin: 0 auto;
+  }
+  
+  header {
+    text-align: center;
+    background-color:#e9ecef;
+    
+  }
+  
+  p {
+    font-size: 1.4rem;
+    font-family: 'Inter';
+    font-weight: 500;
+    padding: 2.5rem;
+  }
+  
+  .heading {
+    margin-top: 2.5rem;
+  
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+  
+  section {
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:1rem;
+  }
+  
+  .main {
+    border: 0.2rem solid #000;
+    background-color: #adb5bd;
+    
+  }
+  
+  .info_1 {
+    position: relative;
+  }
+  .info_2 {
+    position: relative;
+  }
+  
+  .info_3 {
+    position: relative;
+  }
+  
+  .chicken {
+    width:6.9rem;
+    position: absolute;
+    top: 0rem;
+    right:0rem;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    background-color: #ff922b;
+    padding: 0.2rem 1.2rem;
+  
+  }
+  
+  .beaf{
+    width:6.9rem;
+    position: absolute;
+    top: 0rem;
+    right:0rem;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    background-color: #69db7c;
+    padding: 0.2rem 1.2rem;
+  text-align: center;
+  }
+  
+  .sushi{
+    width:6.9rem;
+    position: absolute;
+    top: 0rem;
+    right:0rem;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    background-color: #ff6b6b;
+    padding: 0.2rem 1.2rem;
+  
+  }
+  
+  
+  /* for Desktops --> */
+  
+  @media (min-width:992px){
+    
+    .fordesktop{
+      display:grid;
+      grid-template-columns:33.3% 33.3% 33.3%;
+    }
+  }
+  
+  
+  /* for the Tablets */
+  @media (min-width:768px) and (max-width:991px){
+  
+  .fortab{
+    padding:1.2rem 1.1rem;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+  }
+  .special{
+    grid-column:1/-1;
+  }
+  }
+  
+  
+  /*for the Mobile */
+  
+  @media (max-width:767px)  {
+  .formobile{
+    display:grid;
+    grid-template-columns:100%;
+  }
+  
+  }
